@@ -1,9 +1,3 @@
-<style>
-table {
-margin: auto;
-border: 1px solid red
-}
-</style>
 ### 背景介绍
 
 日常生活中在使用电话或计算机时会发出不同频率的声音，我们的项目基于此进行实验：
