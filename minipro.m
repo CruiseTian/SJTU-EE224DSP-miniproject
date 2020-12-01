@@ -118,14 +118,13 @@ A22 = 1500*sin(2*pi*F2*t1); %F2频率对应信号
 A1 = 1500*sin(2*pi*F1*t); %F1频率对应信号
 A2 = 1500*sin(2*pi*F2*t); %F2频率对应信号
 x = A1 + A2;                 %F1、F2叠加频率信号，即按键声音信号
-size(x)
 N1 = 1024*2;              %快速傅里叶变换采样点数
 y = fft(x,N1);            %快速傅里叶变换，第一个参数为时域函数，第二个参数为FFT的点数。N1的值应为2的n次幂
 y = abs(y)/(N1/2);        %取实数并进行幅值修正
 f = linspace(0,Fs,N1);    %频率序列
-sound(x,Fs);%第一个参数为声音函数，第二个参数为采样点数
-filename = '1.wav';
+filename = 'actual.wav';
 audiowrite(filename,x,Fs);
+sound(x,Fs);%第一个参数为声音函数，第二个参数为采样点数
 axes(handles.axes1);
 plot(t1,A11);
 title('A1');
@@ -176,6 +175,7 @@ function pushbutton2_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton2 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+global Type;
 Type = 2;%第一个按钮设置编号1，一次类推
 my_callback_fcn(handles);%设置编号后同意进行之后的操作
 
