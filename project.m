@@ -21,23 +21,20 @@ wd=abs(wp-ws);
 N=ceil(4*pi/wd);
 wc=(wp+ws)/2;
 b=fir1(N,wc/pi,hamming(N+1));
-%freqz(b,1);
 x_filt=filter(b,1,x_original);
-%xfinal = fftfilt(b,x_mix);
 y = fft(x_filt,N1);             %快速傅里叶变换，第一个参数为时域函数，第二个参数为FFT的点数。N1的值应为2的n次幂
 y = abs(y)/(N1/2);              %取实数并进行幅值修正
 f = linspace(0,Fs,N1);          %频率序列
+subplot(3,1,2)
 plot(f,y);
 
 %寻找端点
 len=length(x_filt);
-nk=[0:len-1];
-
 yk=fft(x_filt,len);
-fk=Fs*nk/len;
 fp=floor(1000*len/Fs);
-
-% plot(fk,abs(yfk))
+% nk=[0:len-1];
+% fk=Fs*nk/len;
+% plot(fk,abs(yk))
 % grid on
 
 %找低频最大能量对应频率
