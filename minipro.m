@@ -167,7 +167,7 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 1;%第一个按钮设置编号1，一次类推
+Type = 1;%第一个按钮设置编号1，以此类推
 my_callback_fcn(handles);%设置编号后同意进行之后的操作
 
 
@@ -177,8 +177,8 @@ function pushbutton2_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 2;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 2;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton3.
@@ -187,8 +187,8 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 3;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 3;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton4.
@@ -197,8 +197,8 @@ function pushbutton4_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 4;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 4;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton5.
@@ -207,8 +207,8 @@ function pushbutton5_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 5;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 5;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton6.
@@ -217,8 +217,8 @@ function pushbutton6_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 6;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 6;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton7.
@@ -227,8 +227,8 @@ function pushbutton7_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 7;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 7;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton8.
@@ -237,8 +237,8 @@ function pushbutton8_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 8;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 8;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton9.
@@ -247,9 +247,8 @@ function pushbutton9_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 9;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
-
+Type = 9;
+my_callback_fcn(handles);
 
 % --- Executes on button press in pushbutton10.
 function pushbutton10_Callback(hObject, eventdata, handles)
@@ -257,8 +256,8 @@ function pushbutton10_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 10;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 10;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton11.
@@ -267,8 +266,8 @@ function pushbutton11_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 11;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 11;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton12.
@@ -277,8 +276,8 @@ function pushbutton12_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 12;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 12;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton13.
@@ -287,8 +286,8 @@ function pushbutton13_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 13;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 13;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton14.
@@ -297,8 +296,8 @@ function pushbutton14_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 14;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 14;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton15.
@@ -307,8 +306,8 @@ function pushbutton15_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 15;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 15;
+my_callback_fcn(handles);
 
 
 % --- Executes on button press in pushbutton16.
@@ -317,8 +316,8 @@ function pushbutton16_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 global Type;
-Type = 16;%第一个按钮设置编号1，一次类推
-my_callback_fcn(handles);%设置编号后同意进行之后的操作
+Type = 16;
+my_callback_fcn(handles);
 
 
 % --- Executes during object creation, after setting all properties.
