@@ -29,12 +29,6 @@ y = abs(y)/(N1/2);              %取实数并进行幅值修正
 f = linspace(0,Fs,N1);          %频率序列
 plot(f,y);
 
-N=201;
-h=linspace(1,1,N);%形成一个矩形窗，长度为N
-en=conv(h,y.*y);%求卷积得其短时能量函数En
-subplot(3,2,5),plot(en);
-title ('能量函数');
-
 %寻找端点
 len=length(x_filt);
 nk=[0:len-1];

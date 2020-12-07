@@ -107,6 +107,7 @@ switch(Type)
     case(16)
         F1 = 1633;F2 = 941;%对应第二个按钮发声的频率值
 end
+
 Fs = 44100;                  %采样频率
 T = 0.2;                     %采样时间
 dt = 1/Fs;                %采样时间间隔
@@ -123,8 +124,8 @@ y = fft(x,N1);            %快速傅里叶变换，第一个参数为时域函�
 y = abs(y)/(N1/2);        %取实数并进行幅值修正
 f = linspace(0,Fs,N1);    %频率序列
 filename = 'actual.wav';
-audiowrite(filename,x,Fs);
-sound(x,Fs);%第一个参数为声音函数，第二个参数为采样点数
+audiowrite(filename,x/3000,Fs);
+sound(x/3000,Fs);%第一个参数为声音函数，第二个参数为采样点数
 axes(handles.axes1);
 plot(t1,A11);
 title('A1');
